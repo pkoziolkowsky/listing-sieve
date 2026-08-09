@@ -1,0 +1,59 @@
+name: Listing Sieve
+
+on:
+  schedule:
+    # UTC crons. A run tries to start every hour through the day; the
+    # concurrency group keeps exactly ONE session active (each lives up to
+    # ~5h20m polling the inbox every 20s) and queues one replacement, so a
+    # crashed or expired session is succeeded within the hour. Runs that
+    # start outside the 7:00 AM-10:30 PM New York window exit immediately.
+    - cron: "0 11-23 * * *"
+    - cron: "0 0-3 * * *"
+  workflow_dispatch:
+    inputs:
+      test:
+        description: "Send a test phone notification"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sieve
+  cancel-in-progress: false
+
+jobs:
+  sieve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # No dependencies to install -- Python standard library only.
+
+      - name: Run sieve
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
+          PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          TEST_NOTIFY: ${{ inputs.test }}
+        run: python sieve.py
+
+      - name: Save state back to repo
+        if: always()
+        run: |
+          git config user.name "sieve-bot"
+          git config user.email "actions@github.com"
+          git add -A
+          git diff --quiet --cached || git commit -m "Update sieve state [skip ci]"
+          git pull --rebase || true
+          git push || true
