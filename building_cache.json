@@ -1,1 +1,37 @@
-{}
+{
+"525 9th ave apt 4": {
+"verdict": "UNKNOWN",
+"why": "building not found",
+"year": null,
+"units": null,
+"bldg_class": ""
+},
+"448 w 46th st apt 5rw": {
+"verdict": "UNKNOWN",
+"why": "building not found",
+"year": null,
+"units": null,
+"bldg_class": ""
+},
+"405 e 69th st apt 5d": {
+"verdict": "UNKNOWN",
+"why": "building not found",
+"year": null,
+"units": null,
+"bldg_class": ""
+},
+"2790 broadway": {
+"verdict": "UNKNOWN",
+"why": "building not found",
+"year": null,
+"units": null,
+"bldg_class": ""
+},
+"122 west 81st street": {
+"verdict": "UNKNOWN",
+"why": "building not found",
+"year": null,
+"units": null,
+"bldg_class": ""
+}
+}
