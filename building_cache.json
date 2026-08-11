@@ -33,5 +33,54 @@
 "year": null,
 "units": null,
 "bldg_class": ""
+},
+"233 e 50th st apt 5": {
+"verdict": "LIKELY",
+"why": "6 units, built 1910 (pre-1974, 6+ units)",
+"year": 1910,
+"units": 6,
+"bldg_class": "S5"
+},
+"426 w 49th st apt 2b": {
+"verdict": "LIKELY",
+"why": "20 units, built 1920 (pre-1974, 6+ units)",
+"year": 1920,
+"units": 20,
+"bldg_class": "C4"
+},
+"414 w 49th st apt 4d": {
+"verdict": "LIKELY",
+"why": "20 units, built 1910 (pre-1974, 6+ units)",
+"year": 1910,
+"units": 20,
+"bldg_class": "C4"
+},
+"330 w 43rd st apt 5": {
+"verdict": "LIKELY",
+"why": "22 units, built 1930 (pre-1974, 6+ units)",
+"year": 1930,
+"units": 22,
+"bldg_class": "C4"
+},
+"348 e 66th st apt 2f": {
+"verdict": "LIKELY",
+"why": "39 units, built 1930 (pre-1974, 6+ units)",
+"year": 1930,
+"units": 39,
+"bldg_class": "C7"
+},
+"87 e 3rd st": {
+"verdict": "LIKELY",
+"why": "20 units, built 1900 (pre-1974, 6+ units)",
+"year": 1900,
+"units": 20,
+"bldg_class": "C1"
+},
+"646 w end ave": {
+"verdict": "LIKELY",
+"why": "18 units, built 1895 (pre-1974, 6+ units)",
+"year": 1895,
+"units": 18,
+"bldg_class": "C7"
 }
 }
