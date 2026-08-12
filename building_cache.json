@@ -82,5 +82,26 @@
 "year": 1895,
 "units": 18,
 "bldg_class": "C7"
+},
+"331 e 5th st apt e3": {
+"verdict": "UNLIKELY",
+"why": "only 0 units (<6)",
+"year": 1966,
+"units": 0,
+"bldg_class": "W2"
+},
+"40 clinton st apt 1d": {
+"verdict": "LIKELY",
+"why": "153 units, built 1964 (pre-1974, 6+ units)",
+"year": 1964,
+"units": 153,
+"bldg_class": "D4"
+},
+"294 broome st room 4": {
+"verdict": "POSSIBLE",
+"why": "8 units, built 2000 -- check for 421a/J-51 benefit",
+"year": 2000,
+"units": 8,
+"bldg_class": "D7"
 }
 }
