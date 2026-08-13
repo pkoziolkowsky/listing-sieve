@@ -103,5 +103,47 @@
 "year": 2000,
 "units": 8,
 "bldg_class": "D7"
+},
+"339 e 6th st apt 14": {
+"verdict": "LIKELY",
+"why": "20 units, built 1884 (pre-1974, 6+ units)",
+"year": 1884,
+"units": 20,
+"bldg_class": "C1"
+},
+"226 e 36th st apt 4c": {
+"verdict": "LIKELY",
+"why": "20 units, built 1910 (pre-1974, 6+ units)",
+"year": 1910,
+"units": 20,
+"bldg_class": "C4"
+},
+"338 w 77th st apt 5b": {
+"verdict": "LIKELY",
+"why": "10 units, built 1887 (pre-1974, 6+ units)",
+"year": 1887,
+"units": 10,
+"bldg_class": "C1"
+},
+"405 w 45th st apt 6e": {
+"verdict": "LIKELY",
+"why": "30 units, built 1930 (pre-1974, 6+ units)",
+"year": 1930,
+"units": 30,
+"bldg_class": "C6"
+},
+"8 spring st apt 5fe": {
+"verdict": "LIKELY",
+"why": "18 units, built 1900 (pre-1974, 6+ units)",
+"year": 1900,
+"units": 18,
+"bldg_class": "C7"
+},
+"242 e 10th st apt 19": {
+"verdict": "LIKELY",
+"why": "30 units, built 1900 (pre-1974, 6+ units)",
+"year": 1900,
+"units": 30,
+"bldg_class": "C7"
 }
 }
