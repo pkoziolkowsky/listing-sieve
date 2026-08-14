@@ -145,5 +145,54 @@
 "year": 1900,
 "units": 30,
 "bldg_class": "C7"
+},
+"621 e 6th st apt 4": {
+"verdict": "LIKELY",
+"why": "10 units, built 1920 (pre-1974, 6+ units)",
+"year": 1920,
+"units": 10,
+"bldg_class": "C6"
+},
+"206 e 10th st": {
+"verdict": "LIKELY",
+"why": "26 units, built 1900 (pre-1974, 6+ units)",
+"year": 1900,
+"units": 26,
+"bldg_class": "C4"
+},
+"161 rivington st apt 1c": {
+"verdict": "LIKELY",
+"why": "16 units, built 1920 (pre-1974, 6+ units)",
+"year": 1920,
+"units": 16,
+"bldg_class": "C7"
+},
+"422 amsterdam ave apt 2c": {
+"verdict": "LIKELY",
+"why": "13 units, built 1891 (pre-1974, 6+ units)",
+"year": 1891,
+"units": 13,
+"bldg_class": "C7"
+},
+"165 ludlow st apt 3d": {
+"verdict": "LIKELY",
+"why": "20 units, built 1910 (pre-1974, 6+ units)",
+"year": 1910,
+"units": 20,
+"bldg_class": "C1"
+},
+"114 suffolk st apt 3b": {
+"verdict": "LIKELY",
+"why": "15 units, built 1920 (pre-1974, 6+ units)",
+"year": 1920,
+"units": 15,
+"bldg_class": "C6"
+},
+"311 e 52nd st apt 2a": {
+"verdict": "UNLIKELY",
+"why": "1-2 family house (class B1)",
+"year": 1910,
+"units": 2,
+"bldg_class": "B1"
 }
 }
